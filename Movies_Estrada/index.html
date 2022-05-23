@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies - plataforma de peliculas y series</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">
+				<img src="img/movies.png" alt="Logo de Movies">
+			</a>
+			<ul>
+				<li>
+					<a href="generos.html">Generos</a>
+				</li>
+				<li>
+					<a href="estrenos.html">Estrenos</a>
+				</li>
+				<li>
+					<!-- Si se inicia sesion, solo muestra Mi lista de recomendaciones y pelis vistas -->
+					<a href="login.html">Iniciar sesión / Mi lista</a>
+				</li>
+				<li>
+					<a href="#Comentarios">Comentarios</a>
+				</li>
+			</ul>
+			<input type="text" placeholder="Buscar...">
+		</nav>
+
+		<!-- Portada grande y descripción-->
+		<a href="#">
+			<!-- Probando detalles con la pelicula Doc. Strage 2 -->
+			<a href="detalles.html">Detalles</a>
+
+			<img src="img/portadas/gran.jpg" alt="sonic 2">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis dolore vitae molestiae iusto enim, quisquam ab, numquam aliquid exercitationem quam, voluptates sit veritatis culpa laborum, dicta omnis? Rem, suscipit?</p>
+		</a>
+	</header>
+	<main>
+		<section>
+			<!-- peliculas y series -->
+			<h2>Populares</h2>
+			<a href="#ver-mas">ver más</a>
+			<div class="lista">
+				<a href="#"><img src="img/portadas/spider-man.png" alt="spider man"></a>
+		     	<a href="#"><img src="img/portadas/matrix.png" alt="matrix"></a>
+		     	<a href="#"><img src="img/portadas/bob.png" alt="bob esponja"></a>
+		     	<a href="#"><img src="img/portadas/dragon.png" alt="dragon"></a>
+		     	<a href="#"><img src="img/portadas/john.png" alt="john wick"></a>
+		     	<a href="#"><img src="img/portadas/naruto.png" alt="naruto"></a>
+		     </div>
+		     <h2>Series sobre crímenes</h2>
+		    <a href="#ver-mas">ver más</a>
+		    <div class="lista">
+		    	<a href="#"><img src="img/portadas/breaking.png" alt="breaking bad"></a>
+		     	<a href="#"><img src="img/portadas/arrow.png" alt="arrow"></a>
+		     	<a href="#"><img src="img/portadas/elchapo.png" alt="el chapo"></a>
+		     	<a href="#"><img src="img/portadas/narcos.png" alt="narcos"></a>
+		     	<a href="#"><img src="img/portadas/gotham.png" alt="gotham"></a>
+		     	<a href="#"><img src="img/portadas/flash.png" alt="flash"></a>
+		     </div>
+		</section>
+		<section>
+			<h2>Comentarios</h2>
+			<form action="enviar.js" method="post" id="Comentarios">
+				<fieldset>
+					<legend>Tu información</legend>
+					<label for="nombre">Usuario/Nombre</label>
+					<br>
+					<input type="text" name="nombre" id="nombre" placeholder="Erik Estrada">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="mail@algo.com">
+				</fieldset>
+				<label for="mensaje">Mensaje</label>
+				<br>
+				<textarea cols="80" rows="20"></textarea>
+				<br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</form>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi natus, nostrum excepturi? Asperiores reprehenderit deleniti ipsam velit itaque ut consectetur incidunt necessitatibus blanditiis. Aliquid perspiciatis fugiat quia dolorum, sit non.</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ex harum eveniet architecto, iure laudantium vitae reiciendis obcaecati quae ipsum animi ratione, accusantium natus. Eaque distinctio alias soluta delectus vitae.</p>
+			<button>Cargar más comentarios</button>
+		</section>
+	<footer>
+		<h3>Seguinos en nuestras redes</h3>
+		<a href="https://www.instagram.com/user" target="_blank">
+			<img src="img/instagram.png" alt="seguinos en instagram">
+		</a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img src="img/facebook.png" alt="seguinos en facebook">
+		</a>
+		<a href="https://www.twitter.com/user" target="_blank">
+			<img src="img/twitter.png" alt="seguinos en twitter">
+		</a>
+	</footer>
+</body>
+</html>
