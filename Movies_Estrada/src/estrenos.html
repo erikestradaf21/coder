@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies - plataforma de peliculas y series</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">
+				<img src="img/movies.png" alt="Logo de Movies">
+			</a>
+			<ul>
+				<li>
+					<a href="generos.html">Generos</a>
+				</li>
+				<li>
+					<a href="estrenos.html">Estrenos</a>
+				</li>
+				<li>
+					<!-- Si se inicia sesion, solo muestra Mi lista de recomendaciones y pelis vistas -->
+					<a href="login.html">Iniciar sesión / Mi lista</a>
+				</li>
+				<li>
+					<a href="#Comentarios">Comentarios</a>
+				</li>
+			</ul>
+			<input type="text" placeholder="Buscar...">
+		</nav>
+	</header>
+	<main>
+		<section>
+			<!-- peliculas y series -->
+			<h2>Películas en Estreno</h2>
+			<a href="#ver-mas">ver más</a>
+			<div class="lista">
+				<a href="#"><img src="img/portadas/memory.png" alt="memory"></a>
+		     	<a href="#"><img src="img/portadas/sonic-2.png" alt="sonic 2"></a>
+		     	<a href="#"><img src="img/portadas/animales-fantasticos-3.png" alt="animales fantasticos 3"></a>
+		     	<a href="#"><img src="img/portadas/fortress-snipers-eye.png" alt="fortress snipers eye"></a>
+		     	<a href="#"><img src="img/portadas/blacklight.png" alt="blanklight"></a>
+		     	<a href="#"><img src="img/portadas/the-batman.png" alt="the batman"></a>
+		     </div>
+		     <h2>Últimos Episodios</h2>
+		    <div class="lista">
+		    	<a href="#">
+		    		<img src="img/portadas/troppo.jpg" alt="troppo">Troppo T1 E8 <br>
+		    	</a>
+		     	<a href="#">
+		     		<img src="img/portadas/the-offer.jpg" alt="the offer">The Offer T1 E6 <br>
+		     	</a>
+		     	<a href="#">
+		     		<img src="img/portadas/joven-sheldon.jpg" alt="joven sheldon">El joven Sheldon T5 E22 <br>
+		     	</a>
+		     	<a href="#mostrar-mas">Mostrar más</a>
+		     </div>
+		</section>
+		<section>
+			<h2>Comentarios</h2>
+			<form action="enviar.js" method="post" id="Comentarios">
+				<fieldset>
+					<legend>Tu información</legend>
+					<label for="nombre">Usuario/Nombre</label>
+					<br>
+					<input type="text" name="nombre" id="nombre" placeholder="Erik Estrada">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email" placeholder="mail@algo.com">
+				</fieldset>
+				<label for="mensaje">Mensaje</label>
+				<br>
+				<textarea cols="80" rows="20"></textarea>
+				<br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</form>
+		</section>
+	<footer>
+		<h3>Seguinos en nuestras redes</h3>
+		<a href="https://www.instagram.com/user" target="_blank">
+			<img src="img/instagram.png" alt="seguinos en instagram">
+		</a>
+		<a href="https://www.facebook.com/" target="_blank">
+			<img src="img/facebook.png" alt="seguinos en facebook">
+		</a>
+		<a href="https://www.twitter.com/user" target="_blank">
+			<img src="img/twitter.png" alt="seguinos en twitter">
+		</a>
+	</footer>
+</body>
+</html>

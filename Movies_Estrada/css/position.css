@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/fondo.png);/*fondo blanco abstracto para testear*/
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+h1,h2,h3{
+	color: #051b30;
+	font-family: 'Quintessential', cursive;
+}
+
+p{
+	color:#817E7E;
+	line-height: 2rem;
+	font-size: 1.6rem;
+}
+
+nav{
+	background-color: rgba(238, 188, 247, .5);
+	/*position*/
+	position: sticky; */posición sticky cuando llega a su coordenada  de top 0 queda fija*/
+	/*padding*/
+	top: 0; /* top 0 */
+	width: 100%; /* ancho al 100% */
+	}
+
+	nav a img{
+		width: 20rem;
+		margin: 20px 20px;
+	}
+
+	nav ul{
+		/*display*/
+		display: inline;  /* se muestra como un elemento de línea */
+	}
+
+	nav ul li{
+		list-style: none;
+		/*display*/
+		display: inline-block; /* se muestra como un elemento de línea y algo de bloque */
+		/*margin*/
+		margin: 0 20px; /*margin top y bottom 0, margin right - left 20px*/
+	}
+
+		nav ul li a{
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: #5B5959;
+		}
+
+		/*hover --- pseudoclase, cuando paso por arriba de un elemento */
+		nav ul li a:hover{
+			font-weight: 600;
+			color: black;
+		}

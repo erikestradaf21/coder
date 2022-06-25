@@ -5,15 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Movies - plataforma de peliculas y series</title>
 	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<nav>
 			<a href="index.html">
 				<img src="img/movies.png" alt="Logo de Movies">
 			</a>
 			<ul>
-				<li>
+				<li class="header__box--white">
 					<a href="generos.html">Generos</a>
 				</li>
 				<li>
@@ -26,20 +27,19 @@
 				<li>
 					<a href="#Comentarios">Comentarios</a>
 				</li>
+				<input type="text" placeholder="Buscar...">
 			</ul>
-			<input type="text" placeholder="Buscar...">
 		</nav>
 
 		<!-- Portada grande y descripción-->
-		<a href="#">
+		<a href="detalles.html">
 			<!-- Probando detalles con la pelicula Doc. Strage 2 -->
-			<a href="detalles.html">Detalles</a>
-
-			<img src="img/portadas/gran.jpg" alt="sonic 2">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nobis dolore vitae molestiae iusto enim, quisquam ab, numquam aliquid exercitationem quam, voluptates sit veritatis culpa laborum, dicta omnis? Rem, suscipit?</p>
+			<img src="img/doc-strange-2.jpeg" alt="doctor strange 2">
+			<h1>Doctor Strange 2 en el multiverso de la locura</h1>
+			<p class="description">Viaja a lo desconocido con el Doctor Strange, quien, con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario.</p>
 		</a>
 	</header>
-	<main>
+	<main class="container">
 		<section>
 			<!-- peliculas y series -->
 			<h2>Populares</h2>
@@ -87,16 +87,17 @@
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ex harum eveniet architecto, iure laudantium vitae reiciendis obcaecati quae ipsum animi ratione, accusantium natus. Eaque distinctio alias soluta delectus vitae.</p>
 			<button>Cargar más comentarios</button>
 		</section>
-	<footer>
-		<h3>Seguinos en nuestras redes</h3>
-		<a href="https://www.instagram.com/user" target="_blank">
-			<img src="img/instagram.png" alt="seguinos en instagram">
+	<footer class="footer">
+		<h3 class="footer__titulo--md">Seguinos en nuestras redes</h3>
+
+		<a href="https://www.instagram.com/user" target="_blank" >
+			<img src="img/instagram.png" alt="seguinos en instagram" class="footer__icon--sm">
 		</a>
 		<a href="https://www.facebook.com/" target="_blank">
-			<img src="img/facebook.png" alt="seguinos en facebook">
+			<img src="img/facebook.png" alt="seguinos en facebook" class="footer__icon--sm">
 		</a>
 		<a href="https://www.twitter.com/user" target="_blank">
-			<img src="img/twitter.png" alt="seguinos en twitter">
+			<img src="img/twitter.png" alt="seguinos en twitter" class="footer__icon--sm">
 		</a>
 	</footer>
 </body>
